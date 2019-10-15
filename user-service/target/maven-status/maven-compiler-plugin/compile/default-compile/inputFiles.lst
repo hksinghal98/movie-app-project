@@ -1,0 +1,11 @@
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/exceptions/UserControllerAdvice.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/repository/UserRepository.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/exceptions/UserAlreadyExistsException.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/services/UserServiceImpl.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/controller/UserController.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/exceptions/UserException.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/services/UserService.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/error/CustomError.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/domain/User.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/UserServicesApplication.java
+/home/cgi/Desktop/StackRoute/movie-project/user-service/src/main/java/com/stackroute/userservices/exceptions/UserNotFoundException.java
