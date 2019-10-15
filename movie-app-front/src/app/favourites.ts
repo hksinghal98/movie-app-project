@@ -5,5 +5,6 @@ export class favourites{
     adult: boolean;
     vote_average: number;
     release_date: string;
-    comments: []
+    comments: [];
+    poster_path: string
 }

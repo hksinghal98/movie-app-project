@@ -13,7 +13,7 @@
                 <h6>Vote Average : {{movie.vote_average}}</h6>
                 <h6>Popularity : {{movie.popularity}}</h6>
                 <div *ngIf = "!isFav; else other_content" >
-                    <button (click) = "addToFavourites(movie.id,movie.overview,movie.title, movie.adult, movie.vote_average,movie.release_date)" class="btn btn-dark">Add To Favourites</button>
+                    <button (click) = "addToFavourites(movie.id,movie.overview,movie.title, movie.adult, movie.vote_average,movie.release_date,movie.poster_path)" class="btn btn-dark">Add To Favourites</button>
                 </div>
                 <ng-template #other_content>
                     <div class="form-group">

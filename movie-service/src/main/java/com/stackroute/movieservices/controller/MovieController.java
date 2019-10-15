@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping(value = "api/v1")
 @Api(value = "Movie Services Rest API")
@@ -54,9 +54,10 @@ public class MovieController {
     }
 
     @ApiOperation(value = "Update information of a Movie")
-    @PutMapping(value = "movie")
-    public ResponseEntity<?> updateMovie(@RequestBody Movie movie) throws MovieException{
-            System.out.println("updateMovie(): "+ movie.toString());
+    @PutMapping(value = "movie/{id}")
+    public ResponseEntity<?> updateMovie(@RequestBody Movie movie, @PathVariable("id") int id) throws MovieException{
+
+            System.out.println("updateMovie(): "+ movie.toString() + id);
             return new ResponseEntity<Movie>(movieService.updateMovie(movie), HttpStatus.OK);
     }
 

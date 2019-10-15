@@ -38,7 +38,7 @@ export class MovieComponent implements OnInit {
   }
  // goForward(){
   //  this.location.forward();}
-  addToFavourites(id,overview,title,adult,vote_average,release_date){
+  addToFavourites(id,overview,title,adult,vote_average,release_date,poster_path){
     const newFav: favourites = new favourites();
     newFav.id = id;
     //newFav.poster_path = poster;
@@ -47,6 +47,7 @@ export class MovieComponent implements OnInit {
     newFav.adult=adult;
     newFav.vote_average=vote_average;
     newFav.release_date = release_date;
+    newFav.poster_path = poster_path;
 
     newFav.comments = [];
     this._movieService.addFavourites(newFav)

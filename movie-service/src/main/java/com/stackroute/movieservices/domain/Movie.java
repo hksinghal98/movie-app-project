@@ -44,6 +44,14 @@ public class Movie {
     @ApiModelProperty(value = "Movie Overview")
     private String overview;
 
+    @JsonProperty(value = "poster_path")
+    @ApiModelProperty(value = "Movie Poster")
+    private String poster_path;
+
+    @JsonProperty(value = "comments")
+    @ApiModelProperty(value = "Movie Comments")
+    private String[] comments;
+
 
 
     @Override
@@ -55,6 +63,7 @@ public class Movie {
                 ", releaseDate='" + releaseDate + '\'' +
                 ", adult=" + adult +
                 ", overview='" + overview + '\'' +
+                ", comments='" + comments + '\'' +
                 '}';
     }
 }

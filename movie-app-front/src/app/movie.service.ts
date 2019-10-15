@@ -41,7 +41,8 @@ export class MovieService {
     return this.http.delete(_url,httpOptions);
   }
   updateComments(favObj):any{
-    let _url = `http://localhost:3000/posts/${favObj.id}`;
+    let _url = `http://localhost:8080/movie-service/api/v1/movie/${favObj.id}`;
+    console.log(favObj);
     return this.http.put(_url,favObj,httpOptions);
   }
 }
